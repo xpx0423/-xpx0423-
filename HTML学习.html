@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML学习</title>
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript"><!-- 关键词 -->
+    <meta name="author" content="或白">
+    <!--<base target="_blank">--> <!-- 设置所有链接在新窗口打开 -->
+    <style type="text/css">
+        body 
+        {
+            background-color: #edffac;
+            font-family: Arial, sans-serif;
+        }
+        h1 
+        {
+            color: #880000;
+        }
+        a 
+        {
+            color: rgb(52, 6, 255);
+        }
+        td 
+        {
+            font-family: '宋体', SimSun, serif;
+            color: #40B3DF;
+        }
+        .go-top {
+            position: fixed;      /* 固定定位，相对浏览器视口 */
+            bottom: 30px;        /* 距离底部30px */
+            right: 30px;         /* 距离右侧30px */
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;  /* 圆形按钮 */
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s, transform 0.2s, background-color 0.2s;
+            opacity: 0;          /* 初始隐藏 */
+            visibility: hidden;   /* 隐藏时不可见也不可点击 */
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: '宋体', SimSun, serif;
+            line-height: 1.8;
+        }
+        .content p {
+            margin-bottom: 20px;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+        }
+         /* 鼠标悬停效果 */
+        .go-top:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* 按钮显示时的状态 */
+        .go-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+            .menu {
+               
+       
+                width: 200px;
+                height: 100%;
+                background-color: #f0f0f0;
+                padding: 30px;
+                box-sizing: border-box;
+                float: left;
+            }
+        
+  
+    </style>
+
+</head> 
+<body>
+    <div class="menu" >
+         <ul type="I">
+         <li> <a href="/首页.html"><i>首页</i></a></li>
+         <li> <a href="#section1"><i>段落</i></a></li>
+         <li> <a href="#section3"><i>链接</i></a></li>
+         <li> <a href="#section4"  style="font-style: italic;"  >图片</a></li>
+         <li> <a href="#section2"  style="text-decoration:none;"><i>全局属性</i></a></li>
+         <li> <a href="#section5"  style="text-decoration:underline;"><i>表格</i></a></li>
+    </ul>  
+    </div>
+
+    <div class="content">
+    <div   id="section0"  style="text-align:center;"> 
+        <h1>HTML 学习</h1></div>
+  
+
+   <div  id="section1" 
+    style="opacity:1;position:absolute;left:158px;width:1500px;height:5px;background-color:#40B3DF">
+    </div><br />
+    <img   src="https://my.swpu.edu.cn/EIP/nonlogin/slideShow/attachment/36691491b5284f1d8958371e418e59c4.png.htm" alt="runoob.com" width="400" height="90">
+    <p style="text-align: end;">这是段落</p>
+    <p><b>这是段落2</b></p>
+     <i>斜体文本</i><br />
+    这是 <sub> 下标</sub> 和 <sup> 上标</sup>
+    <br /> <hr />
+    <h1 id="section3">链接</h1>  <a href="#section0">回到顶端</a><hr />
+    <a  href="/首页.html"> 这是链接(显示内容)</a>
+    <p>
+        target：定义链接的打开方式。<br />
+           _blank: 在新窗口或新标签页中打开链接。<br />
+           _self: 在当前窗口或标签页中打开链接（默认）。<br />
+           _parent: 在父框架中打开链接。<br />
+           _top: 在整个窗口中打开链接，取消任何框架。
+    </p>
+     <p>
+           rel：定义链接与目标页面的关系。<br />
+           nofollow: 表示搜索引擎不应跟踪该链接，常用于外部链接。<br />
+           noopener 和 noreferrer: 防止在新标签中打开链接时的安全问题，尤其是使用 target="_blank" 时。
+    </p>  
+    <p>
+        download：提示浏览器下载链接目标而不是导航到该目标。<br />
+        title：定义链接的额外信息，当鼠标悬停在链接上时显示的工具提示。<br />
+        type: 指定链接资源的MIME类型，例如 "text/html"、"image/png" 等。<br />
+        class: 用于指定元素的类名（CSS中定义）。<br />
+        hreflang: 指定链接的目标URL的语言。
+    </p>          
+    <p>
+        <a href="/首页.html" target="_blank" rel="noopener noreferrer"> 超链接 </a>
+        <a href="https://www.example.com/" style="color: red;">红色链接</a>
+        <a href="https://www.example.com/">
+        <img src="IMG_20220206_155257.jpg/" target="_blank"  width="100" height="100" alt="示例图片"></a>
+    </p>
+    <hr />
+    <h1 id="section4">图片</h1> <hr />
+    <img  src="IMG_20220206_155257.jpg/" width="100" height="100" alt="图片加载失败">
+    <br /> <hr />
+    <h1 id="section2">全局属性</h1><hr />
+    <p1>属性总是以 name="value" 的形式写在标签内，name 是属性的名称，value 是属性的值。</p1>
+    
+    <p>全局属性是所有 HTML 元素都可以使用的属性。</p>
+    <div id="header">This is the header</div>
+    <p>href（用于 "<a>"; 和 <link> 元素）：指定链接的目标 URL。</p>
+    <input type="text" disabled>
+    <!-- 布尔属性是指不需要值的属性，它们的存在即表示 true，不存在则表示 false。-->
+    <br /> <hr />
+    <button id="myBtn">Click Me</button>
+  <hr />
+    
+  <h1 id="section5">表格</h1><hr />
+<table   border="1" cellspacing="1" cellpadding="7">
+  <tbody>
+    <tr>
+      <td>HTML 表格</td>
+      <td>tr 是 table row 的缩写，表示表格的一行。</td>
+      <td>td 是 table data 的缩写，表示表格的数据单元格。</td>
+      <td>是</td>
+      <td>都</td>
+      <td>的</td>
+    </tr>
+    <tr>
+      <td   width="7%" >th 是 table header的缩写表示表格的表头单元格。</td>
+      <td>2dddddd</td>
+      <td  style="font-style: italic;">4</td>
+     <td style="font-family: '宋体';">是否是否是</td>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>吖</td>
+      <td>1</td>
+      <td>3</td>
+      <td>7</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+  </colgroup>
+</table>
+
+
+<h1> 列表 </h1><hr />
+<p>HTML 支持有序列表（ordered list）和无序列表（unordered list）。</p>
+<p>有序列表使用 &lt;ol&gt; 标签，无序列表使用 &lt;ul&gt; 标签，列表项使用 &lt;li&gt; 标签。有序列表会自动为每个列表项添加数字或字母，而无序列表会使用符号（如圆点）来标记列表项。</p>
+<p>HTML 自定义列表
+自定义列表不仅仅是一列项目，而是项目及其注释的组合。
+
+自定义列表以 &lt;dl&gt; 标签开始。每个自定义列表项以 &lt;dt&gt; 开始。每个自定义列表项的定义以 &lt;dd&gt; 开始。</p>
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+<hr />
+<h1>表单</h1><hr />
+<p>HTML 表单用于收集用户输入的数据。表单元素包括文本输入框</p>  
+<form  accept="/首页.html" method="post"> 
+    <!-- 文本输入框 -->
+    <label for="name">用户名:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br>
+     <!-- 密码输入框 -->
+    <label for="password">密 码 : </label>
+    <input type="password" id="password" name="password" required>
+
+    <br>
+    <!-- 下拉列表 -->
+    <label for="country">国家:</label>
+    <select id="country" name="country">
+        <option value="cn">CN</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="other">Other</option>
+    </select>
+    <!-- 提交按钮 -->
+    <input type="submit" value="提交">
+
+</form>
+
+
+
+
+<button class="go-top" id="goTopBtn" title="回到顶部">↑</button>
+</div>
+</body>
+</html>
+
+
+
+<script>
+  document.getElementById('myBtn').onclick = function() {
+    alert('即将跳转');
+    window.open('/首页.html');
+  };
+    (function() {
+        const goTopBtn = document.getElementById('goTopBtn');
+
+        // 监听页面滚动事件
+        window.addEventListener('scroll', function() {
+            // 滚动距离大于200px时显示按钮，否则隐藏
+            if (window.pageYOffset > 200) {
+                goTopBtn.classList.add('show');
+            } else {
+                goTopBtn.classList.remove('show');
+            }
+        });
+
+        // 点击按钮：平滑滚动到页面顶部
+        goTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 34,
+                behavior: 'smooth'   // 平滑滚动效果
+            });
+        });
+
+        // 可选：页面初始加载时也检查一下滚动位置（如果刷新后仍在下方）
+        window.dispatchEvent(new Event('scroll'));
+    })();
+</script>
