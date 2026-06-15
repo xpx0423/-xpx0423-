@@ -6,43 +6,62 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript"><!-- 关键词 -->
     <meta name="author" content="或白">
     <base target="_blank"><!-- 设置所有链接在新窗口打开 -->
-    <style type="text/css">
-        body  
-        {
-            background-color: #edffac;
-            font-family: Arial, sans-serif;
-        }
-        h1 
-        {
-            color: #880000;
-        }
-        a 
-        {
-            color: rgb(52, 6, 255);
-        }
-        td 
-        {
-            font-family: '宋体', SimSun, serif;
-            color: #40B3DF;
-        }
-       
-         .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            font-family: '宋体', SimSun, serif;
-            line-height: 1.8;
-        }
-        .content p {
-            margin-bottom: 20px;
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-   
-        
-  
-    </style>
-
+    <link rel="stylesheet" href="/-xpx0423-/newcss.css">
 </head> 
+
+<body>
+   
+   <div class="menu" id="sidebarMenu">
+     <div class="menu-header">
+        <button class="close-menu-btn" id="inlineCloseBtn" aria-label="关闭侧边栏">✕</button>
+    </div>
+         <ul type="I">
+         <li> <a href="/"><i>首页</i></a></li>
+         <li> <a href="#section1"><i>背景</i></a></li>
+         <li> <a href="#section2"><i>文本</i></a></li>
+         <li> <a href="#section4">图片</a></li>
+         <li> <a href="#section2"><i>全局属性</i></a></li>
+         <li> <a href="#section5"><i>表格</i></a></li>
+    </ul>  
+    </div>
+
+    <div class="content">
+    <div   id="section0"  style="text-align:center;"> 
+        <h1>CSS 学习</h1>
+    </div>
+    <div  id="section1" >
+        <h1>背景</h1>
+        <p>CSS 背景属性用于设置元素的背景样式。常用的背景属性包括：</p>
+    <div class="card">
+
+        <ul>        
+            <li><code>background-color</code>: 设置背景颜色。</li>
+            <li><code>background-image</code>: 设置背景图片。</li>
+            <li><code>background-repeat</code>: 定义背景图片是否重复。</li>
+            <li><code>background-position</code>: 定义背景图片的位置。</li>
+            <li><code>background-size</code>: 定义背景图片的尺寸。</li>
+            <li><code>background-attachment</code>: 定义背景图片是否固定在视口或随内容滚动。</li>
+        </ul>
+    </div>
+ <h1 id="section2">文本</h1>
+ <p>
+    CSS 文本属性用于设置文本的样式和布局。常用的文本属性包括：<br />
+    文本的对齐方式：<br />
+     <code>text-align</code>: 定义文本的水平对齐方式（left、right、center、justify）。<br />
+     <code>text-indent</code>: 定义文本的首行缩进。<br />
+     <code>line-height</code>: 定义文本行间距。<br />
+     <code>letter-spacing</code>: 定义字符之间的间距。<br />
+     <code>word-spacing</code>: 定义单词之间的间距。<br />
+     <code>text-decoration</code>: 定义文本装饰（underline、overline、line-through）。<br />
+     <code>text-transform</code>: 定义文本转换（uppercase、lowercase、capitalize）。<br />
+     <code>text-shadow</code>: 定义文本阴影效果。<br />
+     <code> font-size: 18px   </code>: 定义文本大小。<br />
+     <code>font-family</code>: 定义文本字体。<br />
+     <code>color</code>: 定义文本颜色。<br />
+   
+ </p>
+    <h1 id="section4">图片</h1>
+<button id="menuToggleBtn" style="position:fixed; bottom:30px; right:30px; width:90px; height:90px;">☰</button>
+
+  
+   
